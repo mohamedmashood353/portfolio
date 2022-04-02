@@ -1,0 +1,253 @@
+:root{
+    --no-padding: 0px;
+    --no-margin: 0px;
+    width:100%;height:100%;
+    font-size: 16px;
+}
+
+.no-space-around{
+    padding: var(--no-padding);
+    margin: var(--no-margin);
+}
+
+/* Division wraps all other elements */
+
+.container{
+    position: relative;
+}
+.h-line-wrapper{
+    display: none;
+}
+.cover-pic{
+
+    background-image: url('../resources/MashoodCoverPic.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    width:100%;
+    padding:200px 0px 0px 0px;
+    
+
+}
+.about-me{
+    backdrop-filter: blur(50px);
+    padding: 10px;
+    height: auto;
+    width: 600px;
+    color: rgb(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:1.5rem;
+    line-height: 2;
+    margin-left:40px;
+    border-radius: 20px;
+
+}
+.name{
+    padding: 10px;
+    height: auto;
+    width: auto;
+    color:  rgb(255,255,255,1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.375rem;
+    margin-left:40px;
+}
+
+.main-container{
+    font-family: 'Roboto', sans-serif;
+    height:auto;
+}
+
+.brief-intro-wrapper,
+.brief-intro,
+.profile-image-wrapper,
+.title-wrapper,
+.footer-wrapper,
+.image-wrapper{
+    display:flex;
+}
+.brief-intro-wrapper{
+    flex-direction: column;
+    width:100%;
+}
+.brief-intro{
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding: 110px 50px 5px 50px;
+    text-align: left;
+}
+
+.title-wrapper {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    color: #FEFBF3;
+    margin-right:80px;
+}
+
+.title-wrapper .p_line_1{
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+    font-family: 'Roboto Serif';
+    font-size:40px;
+    opacity: 0.8;
+    
+}
+
+.title-wrapper .p_line_2{
+    opacity: 0.5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size:25px;
+    line-height: 2;
+}
+
+.image-wrapper{
+    display:flex;
+    align-items: flex-start;
+}
+.image{
+    height: 500px;
+    width:450px;
+    box-shadow: 2px 2px 30px 0px grey;
+    clip-path: polygon(0 0, 90% 10%, 90% 88%, 0 100%);
+}
+
+hr{
+    border-color: dimgrey;
+    border-width: thin;
+    width: 98%;
+    margin-top:100px;
+    opacity: 0.5;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height:70px;
+    margin: 0 115px 0 115px;
+}
+
+.footer-wrapper > a{
+    margin: 0 10px 0 10px;
+
+}
+
+.footer-wrapper>.follow-me-label{
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    color: #1572A1;
+    font-size: small;
+    font-weight: 400;
+
+}
+
+
+.experience-icon{
+    font-size:5px;
+    border-radius: 50%;
+    padding-right: 10px;
+    opacity: 0.5;
+
+}
+.experience-wrapper .period{
+    margin-block-start: 1px !important;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+    font-size: medium;
+
+}
+.experience-wrapper .desc{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin-block-start: 0 !important;
+    opacity: 0.8;
+    padding-left: 35px;
+    font-size: 1.2rem;
+
+}
+.experience-wrapper .exp-icon-title-wrapper{
+    display:flex;
+
+}
+.experience-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 100px 0px 100px;
+    height:600px;
+}
+
+@media screen and (max-width:480px) {
+    .about-me{
+        padding: 5px;
+        height: auto;
+        width: 250px;
+        font-size:10px;
+        margin-left:5px;
+    }
+    .name{
+        padding: 5px;
+        height: auto;
+        width: auto;
+        font-size: 30px;
+        margin-left:5px;
+    }
+
+    .cover-pic{
+        height: 200px;
+        padding:50px 0 0 0;
+    }
+
+    .experience-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 15px 0px 15px;
+        height:600px;
+    }
+
+    .h-line-wrapper{
+        width: 30px;
+        display: inline-block;
+        padding: 0 2px 0 2px;
+        
+    }
+    .h-line-wrapper:hover{
+        cursor: pointer;
+        background-color: rgb(0,0,0,0.2);
+    }
+
+    .nav-menu-wrapper{
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-end !important;
+    }
+    .nav-menu{
+        padding-right:2px !important;
+        width:100% !important;
+    }
+
+    .show{
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .h-line{
+        border: 1px solid rgb(0,0,0,0.8);
+        margin-block-start: 5px !important;
+        margin-block-end: 5px !important;
+    }
+    .nav-item{
+        padding-bottom: 10px;
+    }
+
+}
+    
